@@ -1,0 +1,2 @@
+# khwab-boutique-website
+ Boutique Website (Responsive Design) A responsive boutique website built with a mobile-first approach, designed to showcase products and provide an optimal user experience across all devices. The website adapts seamlessly from smartphones to desktops using modern web technologies like HTML, CSS, and media queries. Features include a clean layout, product catalog, shopping cart, and easy navigation. The project aims to demonstrate responsive web design principles and best practices.
