@@ -135,6 +135,12 @@ Explore the latest fashion trends and browse through our boutique collections.
 
 A smooth modal that allows users to log in or register for an account.
 
+### **About Section**
+
+![Dress Customization](./assets/images/screenshots/About.png)
+
+About the designer of KHWAB.
+
 ### **Dress Customization Page**
 
 ![Dress Customization](./assets/images/screenshots/Collection.png)
