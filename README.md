@@ -149,8 +149,8 @@ Manage your shopping cart and view the dresses you've added to your collection.
 
 ## **Contact**
 
-- For any queries or suggestions, feel free to reach out to me at **[your-email@example.com]**.
-- You can also check out my other projects on [GitHub](https://github.com/yourusername).
+- For any queries or suggestions, feel free to reach out to me at **[adityaaerpule@gmail.com]**.
+- You can also check out my other projects on [GitHub](https://github.com/coder-aadii).
 
 ---
 
