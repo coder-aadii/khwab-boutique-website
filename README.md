@@ -129,14 +129,15 @@ Explore the latest fashion trends and browse through our boutique collections.
 
 ### **Login/Registration Modal**
 
-![Login Modal](./assets/screenshots/Login.png)
-![Register Modal](./assets/screenshots/Register.png)
+![Login Modal](./assets/images/screenshots/Login.png)
+
+![Register Modal](./assets/images/screenshots/Register.png)
 
 A smooth modal that allows users to log in or register for an account.
 
 ### **Dress Customization Page**
 
-![Dress Customization](./assets/screenshots/Collection.png)
+![Dress Customization](./assets/images/screenshots/Collection.png)
 
 Customize your dream dress with various options to suit your style!
 
