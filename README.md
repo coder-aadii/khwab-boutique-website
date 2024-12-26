@@ -62,7 +62,7 @@ To get started with **KHWAB** on your local machine, follow these steps:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/khwab-boutique.git
+    git clone https://github.com/coder-aadii/khwab-boutique-website.git
     ```
 
 2. Navigate into the project directory:
