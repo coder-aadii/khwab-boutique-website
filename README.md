@@ -123,19 +123,20 @@ Below are some snapshots showcasing different features of the **KHWAB** boutique
 
 ### **Homepage**
 
-![Homepage](./assets/screenshot-homepage.png)
+![Homepage](./assets/images/screenshots/Hone.png)
 
 Explore the latest fashion trends and browse through our boutique collections.
 
 ### **Login/Registration Modal**
 
-![Login Modal](./assets/screenshot-login-modal.png)
+![Login Modal](./assets/screenshots/Login.png)
+![Register Modal](./assets/screenshots/Register.png)
 
 A smooth modal that allows users to log in or register for an account.
 
 ### **Dress Customization Page**
 
-![Dress Customization](./assets/screenshot-dress-customization.png)
+![Dress Customization](./assets/screenshots/Collection.png)
 
 Customize your dream dress with various options to suit your style!
 
