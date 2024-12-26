@@ -33,10 +33,6 @@ header {
     z-index: 100; /* Keep header above other content */
 }
 
-/* header:hover {
-    background-color: rgb(241, 190, 199);
-} */
-
 .logo img {
     width: 70px;
     height: auto;
@@ -90,7 +86,7 @@ nav ul li a::after {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 70%;
     height: 2px;
     background-color: var(--dark-pink);
     transform: scaleX(0);
@@ -424,3 +420,126 @@ footer {
 html {
     scroll-behavior: smooth;
 }
+/* Media query for mobile phones */
+@media screen and (max-width: 768px) {
+    .hero {
+        background-image: url('/assets/images/hero-bg-phone.png.jpg');
+    }
+}
+
+/* Main content blur effect */
+body.modal-open {
+    filter: blur(5px); /* Applies a blur effect to the body */
+    transition: filter 0.3s ease; /* Smooth transition for the blur effect */
+}
+
+/* Login/Register Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: auto;
+    z-index: 1000;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    width: 500px;
+    position: relative; 
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Close Button */
+.close {
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 1px;
+    right: 7px;
+}
+
+/* Auth Toggle Buttons */
+.auth-toggle {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.auth-toggle button {
+    padding: 10px 20px;
+    color: #c86e88;
+    background-color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+    width: 48%;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.auth-toggle button.active {
+    background-color: #ca5375;
+    color: #fff;
+}
+
+/* Auth Forms */
+.auth-form {
+    display: none;
+    width: 100%;
+}
+
+.auth-form.active {
+    display: block;
+}
+
+/* Input Group */
+.input-group {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: border 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #007bff;
+}
+
+/* Button Style */
+button {
+    padding: 10px 20px;
+    background-color: #ca5375;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: lightpink;
+}
+
