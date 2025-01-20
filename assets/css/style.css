@@ -261,6 +261,47 @@ nav ul li a:hover {
 }
 
 /* Collection Section Stylings */
+/* Custom styles */
+
+.carousel-caption h5,
+.carousel-caption p {
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    color: black;
+    font-weight: bold;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+    /* Changes the arrow icons to black */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    color: black;
+    /* Changes the arrow buttons to black */
+}
+
+.btn {
+    color: black;
+    border-color: black;
+}
+
+.btn-outline-light {
+    border-color: black;
+    color: black;
+}
+
+.section-title,
+.section-description {
+    color: black;
+}
+
+.carousel-indicators button {
+    background-color: black;
+    /* Changes the indicator dots to black */
+}
+
 /* Collections Section Styles */
 .collections {
     padding: 4rem 2rem;
@@ -576,6 +617,7 @@ footer {
         margin-bottom: 1rem;
         /* Add space between links */
     }
+
     .quick-links ul li.about-us-f {
         display: none;
     }
