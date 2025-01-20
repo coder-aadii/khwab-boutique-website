@@ -10,7 +10,8 @@ body {
     background-color: #f6afd7;
     color: #333;
     position: relative;
-    z-index: 10; /* Set z-index lower than the header */
+    z-index: 10;
+    /* Set z-index lower than the header */
 }
 
 /* Color Palette */
@@ -30,7 +31,8 @@ header {
     transition: background-color 0.3s ease;
     position: sticky;
     top: 0;
-    z-index: 100; /* Keep header above other content */
+    z-index: 100;
+    /* Keep header above other content */
 }
 
 .logo img {
@@ -51,7 +53,8 @@ nav {
     position: sticky;
     top: 0;
     overflow: hidden;
-    z-index: 99; /* Ensure nav stays below the header */
+    z-index: 99;
+    /* Ensure nav stays below the header */
 }
 
 /* Navbar links container */
@@ -59,14 +62,16 @@ nav ul {
     display: flex;
     list-style-type: none;
     padding: 0;
-    justify-content: center; /* Center the items */
+    justify-content: center;
+    /* Center the items */
 }
 
 /* Individual list items */
 nav ul li {
     margin: 0 1.5rem;
     position: relative;
-    z-index: 1; /* Ensure that the hover effect is applied on the correct layer */
+    z-index: 1;
+    /* Ensure that the hover effect is applied on the correct layer */
 }
 
 /* Style for anchor tags */
@@ -76,8 +81,10 @@ nav ul li a {
     font-weight: bold;
     font-size: 1.1rem;
     position: relative;
-    transition: color 0.3s ease, transform 0.3s ease; /* Ensure smooth transition */
-    padding-bottom: 2px; /* Add some space at the bottom for the underline */
+    transition: color 0.3s ease, transform 0.3s ease;
+    /* Ensure smooth transition */
+    padding-bottom: 2px;
+    /* Add some space at the bottom for the underline */
 }
 
 /* Hover effect and popup animation */
@@ -101,8 +108,10 @@ nav ul li a:hover::after {
 
 /* Popup effect */
 nav ul li a:hover {
-    color: rgb(195, 51, 75); /* Change text color on hover */
-    transform: translateY(-5px) scale(1.5); /* Slight upward movement and scaling */
+    color: rgb(195, 51, 75);
+    /* Change text color on hover */
+    transform: translateY(-5px) scale(1.5);
+    /* Slight upward movement and scaling */
 }
 
 /* Popup Background */
@@ -185,11 +194,13 @@ nav ul li a:hover {
     align-items: center;
     text-align: center;
     transition: background 0.5s ease;
-    overflow: hidden; /* Ensure particles stay within the hero section */
+    overflow: hidden;
+    /* Ensure particles stay within the hero section */
 }
 
-.hero-text{
-    z-index: 5; /* Ensure the text is on top of particles */
+.hero-text {
+    z-index: 5;
+    /* Ensure the text is on top of particles */
 }
 
 #particles-js {
@@ -198,8 +209,10 @@ nav ul li a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1; /* Behind the text but in front of the background */
-    pointer-events: none; /* Ensure particles don't block user interactions */
+    z-index: 1;
+    /* Behind the text but in front of the background */
+    pointer-events: none;
+    /* Ensure particles don't block user interactions */
 }
 
 .hero-text h1 {
@@ -234,7 +247,7 @@ nav ul li a:hover {
     transform: scale(1.05);
 }
 
-#openLoginModal{
+#openLoginModal {
     padding: 0.5rem 1.5rem;
     margin-top: auto;
     margin-bottom: auto;
@@ -328,6 +341,7 @@ nav ul li a:hover {
 .collection-card:hover {
     transform: translateY(-5px);
 }
+
 /* Collection section stylings ends here */
 
 /* About Us Section */
@@ -354,7 +368,7 @@ nav ul li a:hover {
 }
 
 .about-image img {
-    width: 100%;
+    width: 80%;
     max-width: 400px;
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -384,6 +398,7 @@ nav ul li a:hover {
     margin-bottom: 1rem;
     color: #555;
 }
+
 /* About me section ends here */
 
 /* Animations */
@@ -392,20 +407,21 @@ nav ul li a:hover {
         opacity: 0;
         transform: translateY(30px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
-.container h3{
+.container h3 {
     margin-top: 2%;
     margin-bottom: 2%;
     text-decoration: underline;
     font-size: 30px;
 }
 
-.container a{
+.container a {
     text-decoration: none;
 }
 
@@ -420,7 +436,8 @@ footer {
 .footer-content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* Align quick links to left and social links to right */
+    justify-content: space-between;
+    /* Align quick links to left and social links to right */
     padding: 2rem;
 }
 
@@ -430,10 +447,12 @@ footer {
     margin-bottom: 1.5rem;
     color: black;
     text-align: center;
-    flex: 1 1 100%; /* Ensures the message takes up full width */
+    flex: 1 1 100%;
+    /* Ensures the message takes up full width */
 }
 
-.quick-links h3, .social-links h3 {
+.quick-links h3,
+.social-links h3 {
     font-size: 1.5rem;
     color: rgb(102, 58, 65);
     margin-bottom: 1rem;
@@ -447,38 +466,48 @@ footer {
     margin-right: 10%;
 }
 
-.quick-links ul, .social-links ul {
+.quick-links ul,
+.social-links ul {
     list-style-type: none;
     padding: 0;
 }
 
 /* Align Quick Links li horizontally */
 .quick-links ul {
-    display: flex; /* Align the <li> elements horizontally */
-    gap: 20px; /* Add spacing between the links */
-    justify-content: center; /* Optional: centers the items within the container */
+    display: flex;
+    /* Align the <li> elements horizontally */
+    gap: 20px;
+    /* Add spacing between the links */
+    justify-content: center;
+    /* Optional: centers the items within the container */
 }
 
 .quick-links ul li {
-    margin: 0; /* Remove the default margin */
+    margin: 0;
+    /* Remove the default margin */
 }
 
-.quick-links ul li a, .social-links ul li a {
+.quick-links ul li a,
+.social-links ul li a {
     text-decoration: none;
     color: #333;
     font-size: 1.1rem;
     transition: color 0.3s ease;
 }
 
-.quick-links ul li a:hover, .social-links ul li a:hover {
+.quick-links ul li a:hover,
+.social-links ul li a:hover {
     color: white;
 }
 
 /* Social Links Styles */
 .social-links ul {
-    display: flex; /* Align social icons horizontally */
-    justify-content: center; /* Center align the icons */
-    gap: 15px; /* Add spacing between icons */
+    display: flex;
+    /* Align social icons horizontally */
+    justify-content: center;
+    /* Center align the icons */
+    gap: 15px;
+    /* Add spacing between icons */
 }
 
 .social-links ul li img {
@@ -488,7 +517,8 @@ footer {
 }
 
 .social-links ul li img:hover {
-    transform: scale(1.1); /* Hover effect to slightly scale up the icons */
+    transform: scale(1.1);
+    /* Hover effect to slightly scale up the icons */
 }
 
 .footer-credit {
@@ -507,10 +537,63 @@ footer {
     text-decoration: underline;
 }
 
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        /* Stack the footer sections vertically on mobile */
+        align-items: center;
+        /* Center the content */
+    }
+
+    .thank-you p {
+        display: none;
+        /* Remove thank you message */
+    }
+
+    .quick-links {
+        flex-direction: row;
+        margin-left: 0;
+        /* Remove left margin on smaller screens */
+        margin-bottom: -1rem;
+        /* Add space below quick links */
+    }
+
+    .social-links {
+        margin-right: 0;
+        /* Remove right margin on smaller screens */
+        margin-bottom: 7rem;
+    }
+
+    .quick-links ul {
+        flex-direction: row;
+        /* Stack quick links vertically */
+        align-items: center;
+        /* Center the links */
+    }
+
+    .quick-links ul li {
+        margin-bottom: 1rem;
+        /* Add space between links */
+    }
+    .quick-links ul li.about-us-f {
+        display: none;
+    }
+
+    .social-links ul {
+        flex-direction: row;
+        /* Keep social icons in a row */
+        justify-content: center;
+        /* Center align the social icons */
+    }
+}
+
+
 /* Smooth Scroll */
 html {
     scroll-behavior: smooth;
 }
+
 /* Media query for mobile phones */
 @media screen and (max-width: 768px) {
     .hero {
@@ -520,14 +603,17 @@ html {
 
 /* Modal Styles */
 .modal {
-    display: none; /* Hidden by default */
+    display: none;
+    /* Hidden by default */
     position: fixed;
-    z-index: 1000; /* Sit on top */
+    z-index: 1000;
+    /* Sit on top */
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Black with transparency */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Black with transparency */
     padding-top: 60px;
     transition: all 0.3s ease;
 }

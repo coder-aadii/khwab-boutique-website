@@ -15,7 +15,57 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Teko:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/abouts/about-2/assets/css/about-2.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles */
+        body {
+            font-family: "Edu AU VIC WA NT Hand", cursive;
+        }
+
+        .carousel-caption h5,
+        .carousel-caption p {
+            color: black;
+            font-weight: bold;
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            filter: invert(1);
+            /* Changes the arrow icons to black */
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            color: black;
+            /* Changes the arrow buttons to black */
+        }
+
+        .btn {
+            color: black;
+            border-color: black;
+        }
+
+        .btn-outline-light {
+            border-color: black;
+            color: black;
+        }
+
+        .section-title,
+        .section-description {
+            color: black;
+        }
+
+        .carousel-indicators button {
+            background-color: black;
+            /* Changes the indicator dots to black */
+        }
+    </style>
 </head>
 
 <body>
@@ -67,64 +117,112 @@
         </div>
     </section>
 
-    <!-- Collections Section -->
-    <section id="collections" class="collections">
+    <!-- Collections Section with Carousel -->
+    <section id="collections" class="collections py-5">
         <div class="container">
-            <h2 class="section-title">Our Collections</h2>
-            <p class="section-description">Explore the latest trends and timeless classics in our exclusive collections.
+            <h2 class="section-title mb-4">Our Collections</h2>
+            <p class="section-description mb-5">Explore the latest trends and timeless classics in our exclusive
+                collections.
                 Curated with love and care by Khudeja Nawab.</p>
-            <div class="collection-cards">
-                <div class="collection-card">
-                    <img src="/assets/images/collection-img1.jpg" alt="Collection 1">
-                    <div class="collection-info">
-                        <h3>Luxury Dresses</h3>
-                        <p>Elegant, sophisticated, and perfect for any occasion. Collection of luxurious dresses.</p>
-                        <a href="pages/products.html#luxury" class="btn">See All</a>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/assets/images/collection-img1.jpg" class="d-block w-100" alt="Luxury Dresses">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Luxury Dresses</h5>
+                            <p>Elegant, sophisticated, and perfect for any occasion. Collection of luxurious dresses.
+                            </p>
+                            <a href="pages/products.html#luxury" class="btn btn-outline-light">See All</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/assets/images/collection-img2.jpg" class="d-block w-100" alt="Casual Wear">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Casual Wear</h5>
+                            <p>Comfortable, stylish, and casual. Perfect for everyday wear, curated for the modern
+                                woman.</p>
+                            <a href="/pages/products.html#casual" class="btn btn-outline-light">See All</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/assets/images/collection-img3.jpg" class="d-block w-100" alt="Evening Gowns">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Evening Gowns</h5>
+                            <p>For your special nights. Our collection of evening gowns is designed to make you shine.
+                            </p>
+                            <a href="/pages/products.html#gowns" class="btn btn-outline-light">See All</a>
+                        </div>
                     </div>
                 </div>
-
-                <div class="collection-card">
-                    <img src="/assets/images/collection-img2.jpg" alt="Collection 2">
-                    <div class="collection-info">
-                        <h3>Casual Wear</h3>
-                        <p>Comfortable, stylish, and casual. Perfect for everyday wear, curated for the modern woman.</p>
-                        <a href="/pages/products.html#casual" class="btn">See All</a>
-                    </div>
-                </div>
-
-                <div class="collection-card">
-                    <img src="/assets/images/collection-img3.jpg" alt="Collection 3">
-                    <div class="collection-info">
-                        <h3>Evening Gowns</h3>
-                        <p>For your special nights. Our collection of evening gowns is designed to make you shine.</p>
-                        <a href="/pages/products.html#gowns" class="btn">See All</a>
-                    </div>
-                </div>
-
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
     </section>
 
-    <!-- About Us Section -->
-    <section id="about" class="about-us">
-        <div class="about-container">
-            <div class="about-image">
-                <img src="/assets/images/khudeja-nawab.jpg" alt="Khudeja Nawab">
-            </div>
-            <div class="about-text">
-                <h2>About Me, Khudeja Nawab</h2>
-                <p>Hello, I’m Khudeja Nawab, and for over 14 years, I’ve been deeply immersed in the fashion industry,
-                    creating designs that reflect both my passion for style and my dedication to craftsmanship. From a
-                    young age, I fell in love with fashion, and this love turned into a calling that led me to establish
-                    my own boutique, "KHWAB".</p>
-                <p>Over the years, I’ve built a reputation for creating high-quality, custom-made outfits that truly
-                    capture the essence of my clients' personalities. Whether it’s a bridal collection or an everyday
-                    wear piece, I take pride in crafting designs that make a lasting impression. My boutique has become
-                    a trusted destination for those seeking to bring a bit of magic into their wardrobe.</p>
-                <p>At KHWAB, I continue to innovate, constantly exploring new ideas and techniques while staying rooted
-                    in tradition. Fashion for me is not just a profession—it’s a passion. It’s this passion that drives
-                    me to create designs that are not only beautiful but also meaningful. I hope you can see the love
-                    and dedication that goes into every piece I make.</p>
+    <!-- About Us Section - Bootstrap Brain Component -->
+    <section class="py-3 py-md-5">
+        <div class="container">
+            <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
+                <!-- About Image -->
+                <div class="col-12 col-lg-6">
+                    <img class="img-fluid rounded" loading="lazy" src="/assets/images/khudeja-nawab.jpg"
+                        alt="Khudeja Nawab">
+                </div>
+
+                <!-- About Text -->
+                <div class="col-12 col-lg-6">
+                    <div class="row justify-content-xl-center">
+                        <div class="col-12 col-xl-10">
+                            <h2 class="mb-3">About Me, Khudeja Nawab</h2>
+                            <p class="lead fs-4 mb-3 mb-xl-5">
+                                Hello, I’m Khudeja Nawab, and for over 14 years, I’ve been deeply immersed in the
+                                fashion industry,
+                                creating designs that reflect both my passion for style and my dedication to
+                                craftsmanship. From a
+                                young age, I fell in love with fashion, and this love turned into a calling that led me
+                                to establish
+                                my own boutique, "KHWAB".
+                            </p>
+                            <p class="fs-5 mb-3 mb-xl-5">
+                                Over the years, I’ve built a reputation for creating high-quality, custom-made outfits
+                                that truly capture
+                                the essence of my clients' personalities. Whether it’s a bridal collection or an
+                                everyday wear piece,
+                                I take pride in crafting designs that make a lasting impression. My boutique has become
+                                a trusted
+                                destination for those seeking to bring a bit of magic into their wardrobe.
+                            </p>
+                            <p class="fs-5 mb-4 mb-xl-5">
+                                At KHWAB, I continue to innovate, constantly exploring new ideas and techniques while
+                                staying rooted
+                                in tradition. Fashion for me is not just a profession—it’s a passion. It’s this passion
+                                that drives
+                                me to create designs that are not only beautiful but also meaningful. I hope you can see
+                                the love and
+                                dedication that goes into every piece I make.
+                            </p>
+                            <button type="button" class="btn bsb-btn-xl btn-outline-primary rounded-pill">Explore Our
+                                Collection</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -137,7 +235,7 @@
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#collections">Collections</a></li>
-                    <li><a href="#about">About Us</a></li>
+                    <li class="about-us-f"><a href="#about">About Us</a></li>
                     <li><a href="#service">Service</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -148,22 +246,26 @@
             <div class="social-links">
                 <h3>Follow Us</h3>
                 <ul>
-                    <li><a href="https://www.instagram.com/khwabofficial/?igsh=MXZoZmw4djF5OGRlbw%3D%3D#" target="_blank">
-                            <img src="https://img.icons8.com/?size=100&id=Xy10Jcu1L2Su&format=png&color=000000" alt="Instagram"></a></li>
+                    <li><a href="https://www.instagram.com/khwabofficial/?igsh=MXZoZmw4djF5OGRlbw%3D%3D#"
+                            target="_blank">
+                            <img src="https://img.icons8.com/?size=100&id=Xy10Jcu1L2Su&format=png&color=000000"
+                                alt="Instagram"></a></li>
                     <li><a href="https://www.facebook.com" target="_blank">
-                            <img src="https://img.icons8.com/?size=100&id=118497&format=png&color=000000" alt="Facebook"></a></li>
+                            <img src="https://img.icons8.com/?size=100&id=118497&format=png&color=000000"
+                                alt="Facebook"></a></li>
                     <li><a href="https://twitter.com" target="_blank">
-                            <img src="https://img.icons8.com/?size=100&id=13963&format=png&color=000000" alt="Twitter"></a></li>
+                            <img src="https://img.icons8.com/?size=100&id=13963&format=png&color=000000"
+                                alt="Twitter"></a></li>
                     <li><a href="https://www.pinterest.com" target="_blank">
-                            <img src="https://img.icons8.com/?size=100&id=16713&format=png&color=000000" alt="Pinterest"></a></li>
+                            <img src="https://img.icons8.com/?size=100&id=16713&format=png&color=000000"
+                                alt="Pinterest"></a></li>
                 </ul>
             </div>
         </div>
 
-        <hr>
-
         <div class="footer-credit">
-            <p>Designed with ❤️ by <a href="https://www.linkedin.com/in/aditya-aerpule-a22062309/" target="_blank">Coder Aadi</a></p>
+            <p>Designed with ❤️ by <a href="https://www.linkedin.com/in/aditya-aerpule-a22062309/" target="_blank">Coder
+                    Aadi</a></p>
         </div>
     </footer>
 
@@ -350,6 +452,10 @@
             "retina_detect": true
         });
     </script>
+
+    <!-- Bootstrap JS & Dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 
     <script>
         // Modal and Form Toggle
