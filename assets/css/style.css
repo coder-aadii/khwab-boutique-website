@@ -23,6 +23,7 @@ body {
 
 /* Header Section */
 header {
+    font-family: "Edu AU VIC WA NT Hand", cursive;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -309,6 +310,10 @@ nav ul li a:hover {
     color: rgb(210, 107, 124);
 }
 
+.collections .section-title{
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+}
+
 .collections .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -580,6 +585,22 @@ footer {
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
+    body {
+        font-family: "Edu AU VIC WA NT Hand", cursive;
+    }
+
+    .hero-text h1 {
+        font-size: 3.5rem;
+        font-family: "Great Vibes", cursive;
+        color: rgb(0, 0, 0);
+        margin-bottom: 5px;
+        animation: fadeInUp 1s ease-out;
+    }
+
+    .hero {
+        background-image: url('/assets/images/hero-bg-phone.png.jpg');
+    }
+
     .footer-content {
         flex-direction: column;
         /* Stack the footer sections vertically on mobile */
@@ -628,19 +649,29 @@ footer {
         justify-content: center;
         /* Center align the social icons */
     }
+
+    .modal-wrapper {
+        padding: 10px;
+        width: 90%;
+    }
+
+    .auth-toggle button {
+        padding: 8px 15px;
+    }
+
+    .input-group input {
+        padding: 8px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+    }
 }
 
 
 /* Smooth Scroll */
 html {
     scroll-behavior: smooth;
-}
-
-/* Media query for mobile phones */
-@media screen and (max-width: 768px) {
-    .hero {
-        background-image: url('/assets/images/hero-bg-phone.png.jpg');
-    }
 }
 
 /* Modal Styles */
@@ -794,24 +825,4 @@ html {
 
 .btn:hover {
     background-color: rgb(149, 41, 59);
-}
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    .modal-wrapper {
-        padding: 10px;
-        width: 90%;
-    }
-
-    .auth-toggle button {
-        padding: 8px 15px;
-    }
-
-    .input-group input {
-        padding: 8px;
-    }
-
-    .btn {
-        padding: 10px 20px;
-    }
 }
