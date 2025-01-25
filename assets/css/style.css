@@ -37,12 +37,12 @@ header {
 }
 
 .logo img {
-    width: 70px;
+    width: 120px;
+    margin-left: 15%;
     height: auto;
     margin-top: auto;
     margin-bottom: auto;
     transition: transform 0.3s ease;
-    border-radius: 50%;
 }
 
 .logo img:hover {
@@ -55,7 +55,6 @@ nav {
     top: 0;
     overflow: hidden;
     z-index: 99;
-    /* Ensure nav stays below the header */
 }
 
 /* Navbar links container */
@@ -69,7 +68,9 @@ nav ul {
 
 /* Individual list items */
 nav ul li {
-    margin: 0 1.5rem;
+    margin-top: 2%;
+    margin-right: 2.5rem;
+    /* margin: 1.5rem; */
     position: relative;
     z-index: 1;
     /* Ensure that the hover effect is applied on the correct layer */
@@ -113,6 +114,55 @@ nav ul li a:hover {
     /* Change text color on hover */
     transform: translateY(-5px) scale(1.5);
     /* Slight upward movement and scaling */
+}
+
+/* Media query for screen width 786px or less */
+@media (max-width: 786px) {
+
+    /* Hide the navbar links and display the hamburger icon */
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        z-index: 99;
+    }
+
+    /* Style for the hamburger icon */
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        z-index: 100;
+        /* Ensure hamburger icon is on top */
+        padding: 10px;
+    }
+
+    .hamburger div {
+        width: 30px;
+        height: 3px;
+        background-color: var(--dark-pink);
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    /* Toggle nav when hamburger is clicked */
+    .hamburger.active+ul {
+        display: flex;
+    }
+
+    /* Style the navbar links for mobile view */
+    nav ul li {
+        margin: 1rem 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    nav ul li a {
+        font-size: 1.3rem;
+    }
 }
 
 /* Popup Background */
@@ -248,9 +298,22 @@ nav ul li a:hover {
     transform: scale(1.05);
 }
 
+@media (max-width: 786px) {
+    .hero-text .btn {
+        width: 50%;
+        background-color: var(--dark-pink);
+    }
+    .hero-text .btn:hover {
+        background-color: var(--dark-pink);
+        transform: scale(1.05);
+        color: white;
+    }
+}
+
+
 #openLoginModal {
     padding: 0.5rem 1.5rem;
-    margin-top: auto;
+    margin-top: 0.5rem;
     margin-bottom: auto;
     background-color: var(--dark-pink);
     color: white;
@@ -310,7 +373,7 @@ nav ul li a:hover {
     color: rgb(210, 107, 124);
 }
 
-.collections .section-title{
+.collections .section-title {
     font-family: "Edu AU VIC WA NT Hand", cursive;
 }
 
